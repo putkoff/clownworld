@@ -1,0 +1,38 @@
+{
+  "name": "clownworld-app",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 6041",
+    "build": "next build",
+    "start": "next start -p 6040",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@putkoff/abstract-logger": "0.0.82",
+    "@putkoff/abstract-utilities": "^1.0.158",
+    "next": "15",
+    "path-browserify": "^1.0.1",
+    "react": "19",
+    "react-dom": "19",
+    "react-range": "^1.10.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "9",
+    "eslint-config-next": "15",
+    "typescript": "5"
+  },
+  "browser": {
+    "fs": false,
+    "node:fs": false,
+    "node:fs/promises": false,
+    "path": "path-browserify",
+    "node:path": "path-browserify"
+  }
+}

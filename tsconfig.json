@@ -1,0 +1,135 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@functions": [
+        "./src/functions/"
+      ],
+      "@apiCalls": [
+        "./src/functions/apiCalls"
+      ],
+      "@submit/*": [
+        "./src/functions/submit/*"
+      ],
+      "@interfaces": [
+        "./src/interfaces/interfaces"
+      ],
+      "@components": [
+        "./src/components"
+      ],
+      "@Forms/*": [
+        "./src/components/Forms/*"
+      ],
+      "@VideoUrl": [
+        "./src/components/Forms/VideoUrl"
+      ],
+      "@Handles/*": [
+        "./src/components/Handles/*"
+      ],
+      "@VideoSubmit": [
+        "./src/components/Handles/VideoSubmit"
+      ],
+      "@Meta/*": [
+        "./src/components/Meta/*"
+      ],
+      "@Details/*": [
+        "./src/components/Meta/Details/*"
+      ],
+      "@VideoDetails": [
+        "./src/components/Meta/Details"
+      ],
+      "@Sections/*": [
+        "./src/components/Sections/*"
+      ],
+      "@Players/*": [
+        "./src/components/Sections/Players/*"
+      ],
+      "@VideoPlayer": [
+        "./src/components/Sections/Players/VideoPlayer"
+      ],
+      "@DownloadedVideos": [
+        "./src/components/Sections/DownloadedVideos"
+      ],
+      "@Footers/*": [
+        "./src/components/Sections/Footers/*"
+      ],
+      "@VideoFooter": [
+        "./src/components/Sections/Footers/VideoFooter"
+      ],
+      "@Headers/*": [
+        "./src/components/Sections/Headers/*"
+      ],
+      "@VideoHeader": [
+        "./src/components/Sections/Headers/VideoHeader"
+      ],
+      "@Inputs/*": [
+        "./src/components/Sections/Inputs/*"
+      ],
+      "@UrlInput": [
+        "./src/components/Sections/Inputs/UrlInput"
+      ],
+      "@Sharing": [
+        "./src/components/Sections/Sharing"
+      ],
+      "@SocialSharing": [
+        "./src/components/"
+      ],
+      "@VideoCropper": [
+        "./src/components/Sections/VideoCropper"
+      ],
+      "@Styles/*": [
+        "./src/styles/*"
+      ],
+      "@HomeStyle": [
+        "./src/styles/Home.module.css"
+      ],
+      "@UrlCheckbox": [
+        "./src/components/Meta"
+      ],
+      "@Modal": [
+        "./src/components/Props/Modal"
+      ],
+      "@CropButtons": [
+        "./src/components/Props/CropButtons"
+      ],
+      "@TrackPlays": [
+        "./src/components/Meta/Trackers"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
