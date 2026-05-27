@@ -1,4 +1,4 @@
-.video-footer {
+.videoFooter {
   margin-top: 1rem;
   padding: 0.5rem;
   text-align: center;
@@ -6,11 +6,11 @@
   font-size: 0.9rem;
 }
 
-.video-footer a {
-  color: #007bff; /* Default link color */
-  text-decoration: none; /* Remove default underline */
+.videoFooter a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-.video-footer a:hover {
-  text-decoration: underline; /* Underline on hover */
+.videoFooter a:hover {
+  text-decoration: underline;
 }

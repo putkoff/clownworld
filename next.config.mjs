@@ -18,6 +18,13 @@ const nextConfig = {
       "@interfaces": path.resolve(__dirname, "src/interfaces/interfaces"),
       "@components": path.resolve(__dirname, "src/components"),
       "@Styles": path.resolve(__dirname, "src/styles"),
+      "@VideoUrl": path.resolve(__dirname, "src/components/Forms/VideoUrl"),
+      "@VideoDetails": path.resolve(__dirname, "src/components/Meta/Details"),
+      "@VideoCropper": path.resolve(__dirname, "src/components/Sections/VideoCropper"),
+      "@Modal": path.resolve(__dirname, "src/components/Props/Modal"),
+      "@CropButtons": path.resolve(__dirname, "src/components/Props/CropButtons"),
+      "@DownloadedVideos": path.resolve(__dirname, "src/components/Sections/DownloadedVideos"),
+      "@VideoFooter": path.resolve(__dirname, "src/components/Sections/Footers/VideoFooter"),
     };
 
     if (!isServer) {

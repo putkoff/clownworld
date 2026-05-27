@@ -16,16 +16,16 @@ export default function DownloadedVideos({
   const currentVideoId = searchParams?.get('video_id') ?? null;
 
   useEffect(() => {
-    // if no videos provided, fallback to fetching
-    const loadVideos = async () => {
-      if (downloadedVideos.length === 0) {
-        const videos: DownloadedVideo[] = (await fetchDownloadedVideos()) || [];
-        videos.sort((a, b) => new Date(b.updated).getTime() - new Date(a.updated).getTime());
-        setDownloadedVideos?.(videos);
-      }
-    };
-    loadVideos();
-  }, [downloadedVideos, setDownloadedVideos]);
+    if (downloadedVideos.length > 0) return;
+    let cancelled = false;
+    fetchDownloadedVideos().then((videos: DownloadedVideo[]) => {
+      if (cancelled || !videos?.length) return;
+      videos.sort((a, b) => new Date(b.updated).getTime() - new Date(a.updated).getTime());
+      setDownloadedVideos?.(videos);
+    });
+    return () => { cancelled = true; };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Auto-scroll to active video
   useEffect(() => {

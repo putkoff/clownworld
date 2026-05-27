@@ -125,14 +125,15 @@ export interface VideoDetailsProps {
   filename: any;
   keywords: string[];
   keywords_str: string;
-  videoUrl: string;
+  video_url: string;
+  optimized_video_url?: string;
   uploader: string;
   uploaderId: string;
+  uploader_url?: string;
   uploadDate: string;
   viewCount: number;
-  video_url: string;
   file_name: string;
-  onCropClick?: () => void; // Add to interface
+  onCropClick?: () => void;
 }
 export interface CropParams {
   startTime: number;
