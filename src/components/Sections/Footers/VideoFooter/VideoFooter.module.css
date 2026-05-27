@@ -1,0 +1,16 @@
+.video-footer {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: #0a0505;
+  font-size: 0.9rem;
+}
+
+.video-footer a {
+  color: #007bff; /* Default link color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.video-footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
